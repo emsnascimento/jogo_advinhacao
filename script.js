@@ -19,6 +19,7 @@ function chutar() {
   var chute = parseInt(document.getElementById('inputBox').value);
 
   if (chute == numeroSecreto) {
+    tentativas = 3
     elementoResultado.innerHTML = `Você acertou! Eu realmente estava pensando no número ${numeroSecreto}`;
     document.getElementById('chutar').style.visibility = 'hidden';
     btnTenteNovamente.removeAttribute('hidden');
